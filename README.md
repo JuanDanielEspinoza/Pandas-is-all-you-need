@@ -1,7 +1,7 @@
-📘 Guía práctica de Pandas para análisis e interpretación de datos tabulares
+#📘 Guía práctica de Pandas para análisis e interpretación de datos tabulares
 
-Bienvenido 👋 Este repositorio es una guía práctica y progresiva
-diseñada para aprender y dominar Pandas, la librería fundamental de
+Bienvenido 👋 Este repositorio es una **guía práctica y progresiva
+diseñada para aprender y dominar Pandas**, la librería fundamental de
 Python para el análisis y manipulación de datos tabulares.
 
 Aquí encontrarás:
