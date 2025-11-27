@@ -1,112 +1,64 @@
-📘 Pandas Learning Path — Manejo e Interpretación de Datos Tabulares
+📘 Guía práctica de Pandas para análisis e interpretación de datos tabulares
 
-Bienvenido a este repositorio orientado al aprendizaje práctico de
-Pandas, la librería fundamental de Python para el análisis y
-procesamiento de datos tabulares.
+Bienvenido 👋 Este repositorio es una guía práctica y progresiva
+diseñada para aprender y dominar Pandas, la librería fundamental de
+Python para el análisis y manipulación de datos tabulares.
+
 Aquí encontrarás:
 
--   Guías estructuradas por niveles
--   Notebooks interactivos
--   Ejercicios reales
--   Retos aplicados al contexto de datos clínicos (sin datos sensibles)
--   Buenas prácticas de análisis de datos
--   Mini-proyectos de interpretación y reporte
+-   Conceptos esenciales explicados de forma clara
+-   Ejemplos prácticos con código bien estructurado
+-   Casos reales de análisis de datos
+-   Buenas prácticas para trabajar con DataFrames
+-   Ejercicios, retos y mini-proyectos
+-   Notebooks organizados por nivel (básico → avanzado)
 
-📌 Objetivo del repositorio
+------------------------------------------------------------------------
 
-Permitir al estudiante aprender Pandas de forma progresiva, con ejemplos
-claros, ejercicios guiados y aplicaciones reales, dominando la
-manipulación, limpieza, transformación, agregación y análisis de datos
-tabulares.
+🎯 ¿Cuál es el propósito de este repositorio?
 
-🧭 Mapa de Aprendizaje (Learning Path)
+Este repositorio fue creado para servir como un curso práctico
+autodidacta, ideal para estudiantes, investigadores y desarrolladores
+que necesitan aprender a:
 
-📖 Semana 1 — Fundamentos Intermedios de Pandas
+-   Cargar, limpiar y transformar bases de datos tabulares
+-   Realizar análisis exploratorio (EDA)
+-   Manejar valores nulos, duplicados y tipos de datos
+-   Agrupar, filtrar y combinar DataFrames
+-   Generar métricas, resúmenes y visualizaciones básicas
+-   Preparar datos para modelos de Machine Learning
 
--   Creación y manipulación de DataFrames
--   Indexación avanzada
--   Operaciones con columnas
--   Funciones: apply, map, applymap, lambda
--   Valores nulos y duplicados
--   Ordenamiento
+------------------------------------------------------------------------
 
-📊 Semana 2 — Limpieza y Preprocesamiento
+📂 ¿Qué encontrarás en este repositorio?
 
--   Outliers
--   Conversión de tipos
--   Manejo de fechas
--   Validación de estructura
+-   /notebooks/ — Jupyter Notebooks organizados por tema
+-   /datasets/ — Conjuntos de datos de ejemplo
+-   /scripts/ — Funciones reutilizables en Python
+-   README.md — Tu guía principal
+-   Ejercicios paso a paso
+-   Mini-proyectos finales
 
-📈 Semana 3 — Exploración e Interpretación (EDA)
+------------------------------------------------------------------------
 
--   Estadísticos
--   Agrupación
--   Pivot tables
--   Visualización rápida
+🚀 ¿Para quién es este repositorio?
 
-🤖 Semana 4 — Pandas para Machine Learning
+Este proyecto es ideal para:
 
--   Feature engineering
--   Encoding
--   Joins avanzados
--   Preparación final del dataset
+-   Estudiantes que inician en análisis de datos
+-   Investigadores que trabajan con grandes tablas
+-   Científicos de datos principiantes
+-   Programadores que desean fortalecer su manejo de datos
+-   Personas que quieren entender cómo limpiar, transformar y analizar
+    información estructurada
 
-🗂 Estructura del Repositorio
+------------------------------------------------------------------------
 
-    pandas-learning-path/
-    ├── README.md
-    ├── data/
-    ├── semana_1_fundamentos/
-    ├── semana_2_preprocesamiento/
-    ├── semana_3_eda/
-    ├── semana_4_pandas_ml/
-    └── proyectos/
+🧠 Objetivo final
 
-📘 Contenido Clave
+Que puedas pasar de:
 
-Lectura de DataFrames
-
-    import pandas as pd
-    df = pd.read_csv("data/vital_signs_sample.csv")
-    df.head()
-
-Indexación avanzada
-
-    df.loc[0:5, ["HR", "SpO2"]]
-    df.iloc[0:10, 0:3]
-    df[df["HR"] > 100]
-
-Limpieza
-
-    df["HR"] = df["HR"].fillna(df["HR"].median())
-    df = df.drop_duplicates()
-
-Transformaciones
-
-    def risk_index(row):
-        return row["HR"] / row["SpO2"]
-    df["RiskIndex"] = df.apply(risk_index, axis=1)
-
-Agregación
-
-    df.groupby("patient_id")[["HR", "SpO2"]].mean()
-
-🧪 Mini-Proyectos
-
--   Limpieza de dataset de signos vitales
--   Exploración descriptiva
--   Preparación para ML
-
-📝 Cómo usar
-
-    git clone https://github.com/usuario/pandas-learning-path.git
-    pip install -r requirements.txt
-    jupyter notebook
-
-🤝 Contribuciones
-
-Bienvenidas mejoras, ejercicios y notebooks.
-
-📧 Contacto
-
-Juan Daniel Espinoza
+“No sé cómo manipular un DataFrame”
+a
+“Soy capaz de analizar un dataset real y obtener insights a partir de
+datos tabulares”
