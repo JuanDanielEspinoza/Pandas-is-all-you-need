@@ -15,6 +15,25 @@ Aquí encontrarás:
 
 ------------------------------------------------------------------------
 
+⬇️ **Pasos de instalación**
+
+**Python version>3.8** | Recomendada (3.13.5)
+
+1. **Crear entorno virtual:** `python -m venv .venv`.
+    - Si tu sistema usa `python3`, usa `python3 -m venv .venv`.
+
+2. **Activar entorno virtual**
+    
+    - **Windows (PowerShell):**
+        - Powershell (vscode): `.venv\Scripts\activate`  
+        - CMD: `.\\.venv\\Scripts\\activate.bat`
+
+    - **Linux/macOS (bash/zsh):** `source .venv/bin/activate`
+
+3. **Instalar dependencias:** `pip install -r requirements.txt`
+
+------------------------------------------------------------------------
+
 🎯 ¿Cuál es el propósito de este repositorio?
 
 Este repositorio fue creado para servir como un curso práctico
