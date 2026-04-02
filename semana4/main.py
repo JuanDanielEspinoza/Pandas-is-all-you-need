@@ -9,6 +9,7 @@ print("--- INFORMACIÓN ANTES DE LA LIMPIEZA ---")
 df.info()
 print("\n--- DATOS NULOS INICIALES ---")
 print(df.isnull().sum())
+print(f"Total general de datos nulos en todo el dataset: {df.isnull().sum().sum()}")
 print("\n")
 
 # ==========================================
